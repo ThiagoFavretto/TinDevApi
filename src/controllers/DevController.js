@@ -5,6 +5,7 @@ module.exports = {
   async store(req, res) {
     const { username } = req.body;
 
+    //aqui ta o erro nesse findOne
     const userRepet = await Dev.findOne({ user: username });
 
     if (userRepet) {
