@@ -19,7 +19,7 @@ io.on("connection", socket => {
 //   "mongodb+srv://TinDevCL:cereal0l@tindevcluster-muu7b.mongodb.net/tindevdb?retryWrites=true&w=majority";
 
 mongoose.connect(
-  "mongodb+srv://TinDevCL:cereal0l@tindevcluster-muu7b.mongodb.net/tindevdb?retryWrites=true&w=majority",
+  "mongodb+srv://teste:teste@tindevcluster-muu7b.mongodb.net/tindevdb?retryWrites=true&w=majority",
   {
     useNewUrlParser: true
   }
@@ -39,4 +39,4 @@ httpServer.use(cors());
 httpServer.use(express.json());
 httpServer.use(routes);
 
-server.listen(3333);
+server.listen(process.env.PORT || 3333);

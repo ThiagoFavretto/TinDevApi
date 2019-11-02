@@ -1,10 +1,11 @@
 {
-  "name": "TinDev",
+  "name": "tindev",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/server.js"
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
   },
   "dependencies": {
     "axios": "^0.19.0",
@@ -15,5 +16,7 @@
   },
   "devDependencies": {
     "nodemon": "^1.19.1"
-  }
+  },
+  "repository": "https://github.com/ThiagoFavretto/TinDevApi.git",
+  "author": "Thiago Favretto <thiagofavrettosc@gmail.com>"
 }
