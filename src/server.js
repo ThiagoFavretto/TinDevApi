@@ -15,9 +15,6 @@ io.on("connection", socket => {
   connectUsers[user] = socket.id;
 });
 
-// const connectionString =
-//   "mongodb+srv://TinDevCL:cereal0l@tindevcluster-muu7b.mongodb.net/tindevdb?retryWrites=true&w=majority";
-
 mongoose.connect(
   "mongodb+srv://teste:teste@tindevcluster-muu7b.mongodb.net/tindevdb?retryWrites=true&w=majority",
   {
